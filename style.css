@@ -38,7 +38,8 @@ main {
     width: 70vw;
     background-color: white;
     justify-self: center;
-    margin-top: 2vh;
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
 }
 
 section {
