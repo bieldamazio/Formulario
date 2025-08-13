@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+        <img src="./img/h1-img.png" alt="Imagem de um Formulário">
+    </header>
+    
+    <main>
+        <section>
+            <h2>Nome</h2>
+            <form>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo...">
+            </form>
+        </section>
+        
+        <section>
+            <h2>Email</h2>
+            <form>
+                <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+            </form>
+        </section>
+
+        <section>
+            <h2>Data de nascimento</h2>
+            <form>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+            </form>
+        </section>
+
+        <section>
+            <h2>Estado civil</h2>
+            <form>
+                <select name="estado-civil" id="estado-civil">
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="amasiado">Amasiado</option>
+                    <option value="viuvo">Viúvo</option>
+                </select>
+            </form>
+        </section>
+
+        
+        <section>
+            <h2>Sexo</h2>
+            <form>
+                <input type="radio" id="masculino" name="sexo" value="Masculino">
+                <label for="masculino">Masculino</label> <br>
+
+                <input type="radio" id="feminino" name="sexo" value="Feminino">
+                <label for="feminino">Feminino</label> <br>
+
+                <input type="radio" id="outro" name="sexo" value="Outro">
+                <label for="outro">Outro</label> <br>
+
+                <input type="radio" id="nao-responder" name="sexo" value="Prefiro não responder">
+                <label for="nao-responder">Prefiro não responder</label> <br>
+            </form>
+        </section>
+
+        <section>
+            <h2>Você quer aprender o quê?</h2>
+            <form>
+                <input type="checkbox" id="html" name="aprender-oque" value="HTML5">
+                <label for="html">HTML 5</label> <br>
+
+                <input type="checkbox" id="css" name="aprender-oque" value="CSS3">
+                <label for="css">CSS 3</label> <br>
+
+                <input type="checkbox" id="jquery" name="aprender-oque" value="JQuery">
+                <label for="jquery">JQuery</label> <br>
+
+                <input type="checkbox" id="wordpress" name="aprender-oque" value="WordPress">
+                <label for="wordpress">WordPress</label> <br>
+            </form>
+        </section>
+
+        <section>
+            <h2>Digite aqui sua mensagem:</h2>
+            <form>
+                <textarea name="comentarios" id="comentarios" cols="50" rows="6"></textarea>
+            </form>
+        </section>
+
+        <section>
+            <button onclick="alert('Cadastro concluido')">Cadastrar</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy Curso Dev 2025, todos os direitos reservados.</p>
+        <p>Desenvolvido pelos alunos do DEV Senai-Jaú</p>
+    </footer>
+</body>
+</html>
